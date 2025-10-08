@@ -23,7 +23,7 @@ const TodoList = () => {
         const newTodo = {
             id: todos.length + 1,
             text: inputTodo.trim(),
-            completed:false
+            completed: false
         }
 
         setTodos((prevTodo) => [...prevTodo, newTodo])
@@ -36,8 +36,8 @@ const TodoList = () => {
             if (t.id === id) {
                 return {
                     ...t,
-    completed: !t.completed
-}
+                    completed: !t.completed
+                }
             } else {
                 return t;
             }
@@ -48,7 +48,7 @@ const TodoList = () => {
 
 
     const handleDelete = (id) => {
-       setTodos(todos.filter(t => t.id !== id))
+        setTodos(todos.filter(t => t.id !== id))
     }
     return (
         <>
@@ -61,9 +61,9 @@ const TodoList = () => {
                 <ul>
                     {todos.map(t =>
                         <li key={t.id}>
-                            <input type="checkbox" checked={t.completed} onChange={()=>handleToggle(t.id)} />
-                            <span className={t.completed ?"strike":""}>{t.text}</span>
-                            <button onClick={()=>handleDelete(t.id)}>Delete</button>
+                            <input type="checkbox" checked={t.completed} onChange={() => handleToggle(t.id)} />
+                            <span className={t.completed ? "strike" : ""}>{t.text}</span>
+                            <button onClick={() => handleDelete(t.id)}>Delete</button>
 
                         </li>)}
                 </ul>
