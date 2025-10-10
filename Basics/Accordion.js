@@ -40,3 +40,5 @@ setOpen(open ===index ?null :index)
 }
 
 export default Accordion;
+
+// right class has float:right
