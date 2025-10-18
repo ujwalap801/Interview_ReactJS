@@ -9,7 +9,6 @@ function MortgageCalculator() {
   const [result, setResult] = useState('');
   const [error, setError] = useState('');
 
-
   const handleCal = () => {
     const p = parseFloat(amount);
     const r = parseFloat(interest);

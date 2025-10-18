@@ -16,6 +16,8 @@
 
 ## [Frequently_AskedQuestions](https://namastedev.com/practice/frequently-asked-questions)
 
+## [Guess_RandomNumber](https://namastedev.com/practice/guess-the-number)
+
 ## [MortatageCal](https://namastedev.com/practice/mortgage-calculator)
 
 ## [Password_Toggle](https://namastedev.com/practice/toggle-password)
